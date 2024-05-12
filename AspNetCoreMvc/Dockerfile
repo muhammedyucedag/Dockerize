@@ -13,8 +13,6 @@ COPY . ./
 # Bir sürüm oluþturun ve yayýnlayýn
 RUN dotnet publish AspNetCoreMvc.csproj -c Release -o out
 
-
-
 # Yeni images
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS build-runtime
 # Çalýþma zamaný için bir klasör oluþturuyoruz ve çalýþma dizinini ayarlýyoruz
